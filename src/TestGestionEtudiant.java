@@ -5,7 +5,7 @@ public class TestGestionEtudiant {
 
     public static void main(String[] args) {
         List<Etudiant> etudiants = new ArrayList<>();
-        etudiants.add(new Etudiant(1, "Alicia", 20));
+        etudiants.add(new Etudiant(1, "Bringa", 20));
         etudiants.add(new Etudiant(2, "Bobo", 22));
         etudiants.add(new Etudiant(3, "Chaima", 21));
 
@@ -20,7 +20,7 @@ public class TestGestionEtudiant {
         String noms = gestionEtudiant.afficherNomEtudiant(etudiants, Etudiant::getNom);
         System.out.println("\nNoms des étudiants : " + noms);
 
-        Etudiant nouvelEtudiant = gestionEtudiant.creeEtudiant(() -> new Etudiant(4, "David", 23));
+        Etudiant nouvelEtudiant = gestionEtudiant.creeEtudiant(() -> new Etudiant(4, "wissem", 25));
         System.out.println("\nNouvel étudiant créé : " + nouvelEtudiant);
 
         System.out.println("\nConversion de la liste en flux :");
